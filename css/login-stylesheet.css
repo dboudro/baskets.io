@@ -1,0 +1,187 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+}
+ 
+#chart, #header, #footer {
+  position: absolute;
+  top: 0;
+}
+ 
+#header, #footer {
+  z-index: 1;
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+#header.inverted, #footer.inverted {
+  color: #fff;
+  text-shadow: 0 1px 4px #000;
+}
+ 
+#header {
+  top: 80px;
+  left: 140px;
+  width: 1000px;
+}
+#main-header {
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 10px 20px 10px 20px;
+}
+
+ /*   #tagline  {
+  font-size: 12px;
+  font-family: helvetica neue, helvetica;
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+    background-color: #fff;
+      padding: 5px 10px 5px 10px;
+      bottom: 50px; */
+
+
+
+
+}
+
+#canvas {
+  width: 400px;
+  margin-left: 500px;
+}
+
+#signup {
+  width: 400px;
+  background-color: #fff;
+  opacity: .9;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+#signup input {
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-bottom: 10px;
+}
+
+#signup-container {
+  display: block;
+  width: 100%;
+}
+
+
+#field-box {
+  height: 220px;
+}
+
+#button-wrapper{
+  padding: 10px 0 0px 27.5px;
+}
+
+#submit {
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  margin-bottom: 30px;
+  padding: 6px 100px 6px 100px;
+  text-align: center;
+  text-shadow: 0 -1px 1px #1e2d4d;
+  width: 150px;
+  -webkit-background-clip: padding-box; }
+  button.punch:hover {
+    -webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    cursor: pointer; }
+  button.punch:active {
+    -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+    box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+    margin-top: 58px; }
+
+
+ 
+#footer {
+  font-family: Helvetica Neue;
+  font-size: 11px;
+width: 430px;
+  text-align: center;
+position: relative;
+margin-right: auto;
+margin-left: auto;
+padding-right: 80px;
+
+
+}
+ 
+rect {
+  fill: none;
+  pointer-events: all;
+}
+ 
+pre {
+  font-size: 18px;
+}
+ 
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+input {
+  width: 300px;
+  height: 10px;
+  padding-top: 20px;
+}
+
+
+ 
+.string, .regexp {
+  color: #f39;
+}
+ 
+.keyword {
+  color: #00c;
+}
+ 
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+ 
+.number {
+  color: #369;
+}
+ 
+.class, .special {
+  color: #1181B8;
+}
+ 
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+ 
+a:hover {
+  color: #666;
+}
+ 
+.hint {
+  position: absolute;
+  right: 0;
+  width: 1280px;
+  font-size: 12px;
+  color: #999;
+}
