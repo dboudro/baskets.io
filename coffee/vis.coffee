@@ -176,7 +176,7 @@ class BubbleChart
   show_details: (data, i, element) =>
     d3.select(element).attr("stroke", "black")
     content = "<span class=\"name\">Title:</span><span class=\"value\"> #{data.name}</span><br/>"
-    content +="<span class=\"name\">Amount:</span><span class=\"value\"> $#{addCommas(data.value)}</span><br/>"
+    
    
     @tooltip.showTooltip(content,d3.event)
 
@@ -205,4 +205,4 @@ $ ->
     else
       root.display_all()
 
-  d3.csv "data/Database7.csv", render_vis
+  d3.csv "data/Database12.csv", render_vis
