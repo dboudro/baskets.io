@@ -157,7 +157,7 @@ class BubbleChart
 
   # Method to display year titles
   display_years: () =>
-    years_x = {"Financial": 160, "Sleep": @width / 2, "Academic": @width - 160}
+    years_x = {"Academic": 160, "Sleep": @width / 2, "Financial": @width - 160}
     years_data = d3.keys(years_x)
     years = @vis.selectAll(".years")
       .data(years_data)
@@ -177,7 +177,7 @@ class BubbleChart
     d3.select(element).attr("stroke", "black")
     content = "<span class=\"name\">Title:</span><span class=\"value\"> #{data.name}</span><br/>"
     content +="<span class=\"name\">Amount:</span><span class=\"value\"> $#{addCommas(data.value)}</span><br/>"
-    content +="<span class=\"name\">Year:</span><span class=\"value\"> #{data.year}</span>"
+   
     @tooltip.showTooltip(content,d3.event)
 
 
@@ -205,4 +205,4 @@ $ ->
     else
       root.display_all()
 
-  d3.csv "data/gates_money3.csv", render_vis
+  d3.csv "data/gates_money7.csv", render_vis
