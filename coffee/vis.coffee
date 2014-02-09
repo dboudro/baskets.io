@@ -2,7 +2,7 @@
 class BubbleChart
   constructor: (data) ->
     @data = data
-    @width = 940
+    @width = 1000
     @height = 600
 
     @tooltip = CustomTooltip("gates_tooltip", 240)
@@ -12,9 +12,9 @@ class BubbleChart
     # used
     @center = {x: @width / 2, y: @height / 2}
     @year_centers = {
-      "2008": {x: @width / 3, y: @height / 2},
-      "2009": {x: @width / 2, y: @height / 2},
-      "2010": {x: 2 * @width / 3, y: @height / 2}
+      "2008": {x: @width / 4 - 20, y: @height / 2},
+      "2009": {x: @width / 2 - 20, y: @height / 2},
+      "2010": {x: 3 * @width / 4, y: @height / 2}
     }
 
     # used when setting up force and
@@ -205,4 +205,4 @@ $ ->
     else
       root.display_all()
 
-  d3.csv "data/Database12.csv", render_vis
+  d3.csv "data/Database13.csv", render_vis
