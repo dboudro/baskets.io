@@ -77,6 +77,9 @@ class BubbleChart
     # mouse callbacks
     that = this
 
+
+
+
     # radius will be set to 0 initially.
     # see transition below
     @circles.enter().append("circle")
@@ -155,7 +158,7 @@ class BubbleChart
       d.x = d.x + (target.x - d.x) * (@damper + 0.02) * alpha * 1.1
       d.y = d.y + (target.y - d.y) * (@damper + 0.02) * alpha * 1.1
 
-  # Method to display year titles
+  # Basket View Method
   display_years: () =>
     years_x = {"Family": 160, "Health": @width / 2, "Finances": @width - 160}
     years_data = d3.keys(years_x)
@@ -169,15 +172,18 @@ class BubbleChart
       .attr("text-anchor", "middle")
       .text((d) -> d)
 
+    footer = d3.select("footer").attr("class", "show")
+
   # Method to hide year titiles
   hide_years: () =>
     years = @vis.selectAll(".years").remove()
+  
+
 
   show_details: (data, i, element) =>
     d3.select(element).attr("stroke", "black")
     content = "<span class=\"name\">Event:</span><span class=\"value\"> #{data.name}</span><br/>"
     
-   
     @tooltip.showTooltip(content,d3.event)
 
 
@@ -185,6 +191,7 @@ class BubbleChart
     d3.select(element).attr("stroke", (d) => d3.rgb(@fill_color(d.group)).darker())
     @tooltip.hideTooltip()
 
+   
 
 root = exports ? this
 

@@ -10,6 +10,8 @@ body {
   top: 0;
 }
  
+
+
 #header {
   z-index: 1;
   display: block;
@@ -48,9 +50,6 @@ body {
 
 
 
-
-}
-
 #canvas {
   width: 400px;
   margin-left: 500px;
@@ -69,6 +68,10 @@ body {
   font-size: 18px;
   font-family: Helvetica;
   padding-bottom: 10px;
+}
+
+.switch {
+  padding-left: 500px;
 }
 
 #signup-container {
@@ -117,11 +120,35 @@ body {
   font-family: Helvetica Neue;
   font-size: 15px;
 width: 50px;
-border: 1px 1px 1px 1px; 
+right: 50px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 20px;
+}
 
+.hidden {
+display: none;
+}
 
+.show {
+  display: block;
+}
+#foot {
 
 }
+
+
+
+#user-welcome {
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  width: 100px;
+  height: 20px;
+  font-decoration: bold;
+}
+
+
  
 rect {
   fill: none;
