@@ -5,12 +5,12 @@ body {
   font-family: "Helvetica Neue", Helvetica;
 }
  
-#chart, #header, #footer {
+#chart, #header {
   position: absolute;
   top: 0;
 }
  
-#header, #footer {
+#header {
   z-index: 1;
   display: block;
   font-size: 30px;
@@ -115,13 +115,10 @@ body {
  
 #footer {
   font-family: Helvetica Neue;
-  font-size: 11px;
-width: 430px;
-  text-align: center;
-position: relative;
-margin-right: auto;
-margin-left: auto;
-padding-right: 80px;
+  font-size: 15px;
+width: 50px;
+border: 1px 1px 1px 1px; 
+
 
 
 }

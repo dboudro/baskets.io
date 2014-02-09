@@ -20,6 +20,61 @@
   <!-- end CSS-->
 
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <style>
+  	h3 {
+  		color: silver;
+  	}
+  	#summary {
+  		width: inherit;
+ 		position: relative;
+ 		top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+ 	}
+ 	div.family {
+ 		width: 25%;
+ 		
+ 		margin-left: 0px;
+ 		position: absolute;
+ 		left: 10%;
+     /* border: 1px solid yellow; */
+ 	}
+ 	div.health {
+ 		width: 25%;
+ 		
+ 		margin-left: 0px;
+ 		position: absolute;
+ 		left: 40%;
+    /* border: 1px solid green; */
+ 	}
+ 	div.finances {
+ 		width: 25%;
+ 		
+ 		position: absolute;
+ 		left: 70%;
+  /*  border: 1px solid red; */
+ 	}
+ 	footer {
+ 		position: absolute;
+ 		bottom: 10px;
+ 		left: 40%;
+ 	}
+
+  #health-title {
+    padding-left: 35px;
+
+  }
+
+  #family-title {
+    padding-left: 35px;
+  }
+
+  #finances-title {
+    padding-left: 27px;
+  }
+
+
+  </style>
 </head>
 
 <body>
@@ -32,12 +87,36 @@
     <div id="main" role="main">
       <div id="view_selection" class="btn-group">
         <a href="#" id="all" class="btn active">Life Clump</a>
-        <a href="#" id="year" class="btn">Basket View</a>
+        <a href="#" id="year" class="btn">Baskets View</a>
       </div>
-      <div id="vis"></div>
+      <div id="summary">
+      <div class="family">
+      	<h3 class="family" id="family-title">Family</h3>
+      	<img src="img/bigSmile.png" class="family" alt="Frown" id="familySmile"/>
+      	<ul>
+      	<li>You have</li>
+      	</ul>
+      </div>
+      <div class="health">
+      	<h3 class="health" id="health-title">Health</h3>
+      	<img src="img/medSmile.png" class="health" alt="Smile" id="healthSmile">
+      	<ul>
+      	<li>You have made  $15,000</li>
+        <li>You have spent  $5,000</li>
+      	</ul>
+      </div>
+      <div class="finances">
+      	<h3 class="finances" id="finances-title">Finances</h3>
+      	 <img src="img/bigSmile.png" class="finances" alt="Straight Face" id="financesSmile">
+      	 <ul>
+      	<li>You have</li>
+      	</ul>
+      </div>
+      </div>
     </div>
     <footer>
-    <small id="footer"> 
+    <small id="footer"> Disclaimer: No design recipe was used in the making of this site. 
+      <br></br>
      <a href="http://www.linkedin.com/pub/dylan-boudro/73/797/72b"> Dylan Boudro</a> &amp;
     <a href="http://www.linkedin.com/pub/katherine-hutchinson/61/117/377"> Kate Hutchinson</a> </small>
     </footer>
