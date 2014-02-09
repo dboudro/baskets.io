@@ -157,7 +157,7 @@ class BubbleChart
 
   # Method to display year titles
   display_years: () =>
-    years_x = {"Family": 160, "Health": @width / 2, "Financial": @width - 160}
+    years_x = {"Family": 160, "Health": @width / 2, "Finances": @width - 160}
     years_data = d3.keys(years_x)
     years = @vis.selectAll(".years")
       .data(years_data)
@@ -205,4 +205,4 @@ $ ->
     else
       root.display_all()
 
-  d3.csv "data/Database13.csv", render_vis
+  d3.csv "data/Database.csv", render_vis
