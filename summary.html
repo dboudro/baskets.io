@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/animate.css">
   <!-- end CSS-->
 
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
@@ -52,10 +53,9 @@
  		
  		position: absolute;
  		left: 70%;
-  /*  border: 1px solid red; */
  	}
- 	footer {
- 		position: absolute;
+ 	#foot {
+ 		position: fixed;
  		bottom: 10px;
  		left: 40%;
  	}
@@ -73,48 +73,96 @@
     padding-left: 27px;
   }
 
-
-  </style>
+	img {
+		margin: 1em 0em;
+	}
+	ul {
+		position: relative;
+		right: 40px;
+	}
+  	.top {
+  		padding: .5em;
+		position: fixed;
+		left:0px;
+		min-width: 100%;
+		background-color: lightgrey;
+		height: 5em;
+		
+	  }
+	  header {
+	  	position: absolute;
+	  	left: 45%;
+	  }
+	  #container {
+	  		position: relative;
+	  		top: 5em;
+	  }
+	  #adiv {
+	  		position: fixed;
+	  		left: 75%;
+	  		top: 3em;
+	  		
+	  }
+	  #adiv {
+	  		position: fixed;
+	  		left: 70%;
+	  		top: 3em;
+	  }
+    #logo-icon {
+            float: left;
+            padding-left: 0px;
+            bottom: 5px;
+          }
+	</style>
 </head>
 
 <body>
 
   <div id="container" class="container">
+    <div class="top">
+    
     <header>
-    <h1>Baskets.io</h1>
-    <h4>A Life Visualization Dashboard</h4>
+    <h1 class="fadeInRight animated">Baskets.io</h1>
+    
     </header>
+    </div>
+
     <div id="main" role="main">
       <div id="view_selection" class="btn-group">
-        <a href="#" id="all" class="btn active">Life Clump</a>
-        <a href="#" id="year" class="btn">Baskets View</a>
       </div>
       <div id="summary">
       <div class="family">
       	<h3 class="family" id="family-title">Family</h3>
       	<img src="img/bigSmile.png" class="family" alt="Frown" id="familySmile"/>
       	<ul>
-      	<li>You have</li>
+      	<li>You have spent 10 hours with family this week</li>
+      	<li>You have lost 2 hours by working late</li>
       	</ul>
       </div>
       <div class="health">
       	<h3 class="health" id="health-title">Health</h3>
       	<img src="img/medSmile.png" class="health" alt="Smile" id="healthSmile">
       	<ul>
-      	<li>You have made  $15,000</li>
-        <li>You have spent  $5,000</li>
+      	<li>You ate a salad every day last week</li>
+        <li>You didn't exercise last week</li>
       	</ul>
       </div>
       <div class="finances">
       	<h3 class="finances" id="finances-title">Finances</h3>
+
       	 <img src="img/bigSmile.png" class="finances" alt="Straight Face" id="financesSmile">
       	 <ul>
-      	<li>You have</li>
+      	<li>You made  $15,000 this month</li>
+        <li>You spent  $5,000 this month</li>
       	</ul>
       </div>
       </div>
     </div>
-    <footer>
+    <div id="adiv">
+    	<a class="btn" href="main.html">Baskets</a>
+    	<a class="btn" href="index.html">Log Out</a>
+    </div>
+    <footer id="foot">
     <small id="footer"> Disclaimer: No design recipe was used in the making of this site. 
       <br></br>
      <a href="http://www.linkedin.com/pub/dylan-boudro/73/797/72b"> Dylan Boudro</a> &amp;
@@ -134,7 +182,6 @@
   <script src="js/libs/d3.csv.min.js"></script>
   <script src="js/libs/d3.layout.min.js"></script>
   <script src="js/libs/d3.geom.min.js"></script>
-  <script type="text/coffeescript" src="coffee/vis.coffee"></script>
   <script type="text/javascript">
     $(document).ready(function() {
         $(document).ready(function() {
