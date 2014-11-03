@@ -1,6 +1,6 @@
 Baskets
 =====
-Quantify and Visualize Your Life 
+*Quantify and Visualize Your Life*
 
 ----
 *![Example](http://i.imgur.com/Mlgv1p3.png?1) Finalist at [HackBeanpot  2014](http://projects.hackbeanpot.com/2014-projects.html)*
