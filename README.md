@@ -1,6 +1,5 @@
 baskets.io
 ==========
 
-baskets is awesome you should use it
-
-[will update later]
+live demo
+http://baskets.herokuapp.com/main.html
