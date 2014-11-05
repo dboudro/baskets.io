@@ -9,7 +9,7 @@ Baskets
 
 
 ### What is Baskets?
-Baskets helps you organize your life by creating beautiful visualizations of your life data.  Use your everday technology (Smartphones, Fitbit, Mint.com, etc.) to create visual summaries of your life.  We hope to connect with many services--allowing users to track their health, finances, education, and more.
+Baskets helps you organize your life by creating beautiful visualizations of your life data.  Use your everyday technology (Smartphones, Fitbit, Mint.com, etc.) to create visual summaries of your life.  We hope to connect with many services--allowing users to track their health, finances, education, and more.
 
 
 
